@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.flex-container {
+	display: grid;
+	grid-template-rows: auto 110vh 110vh 110vh 150vh auto;
+}
+h2 {
+	font-family: "Arvo", serif;
+	font-size: 4vmax;
+}
+p,
+label {
+	font-family: "Cabin", sans-serif;
+	font-size: 2vmax;
+	opacity: 1;
+}
+/* HEADER STYLING */
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#header h1 {
+	text-align: center;
+	padding: 2vmax;
+	font-family: "Lobster", cursive;
+	font-size: 50px;
+}
+#header nav ul {
+	list-style-type: none;
+}
+#header nav ul li {
+	display: inline-block;
+}
+#header nav ul li a {
+	background-color: transparent;
+	text-decoration: none;
+	display: block;
+	padding: 2rem;
+	text-align: center;
+	width: 15vw;
+	font-family: "Montserrat", sans-serif;
+	height: 14vh;
+	color: black;
+	font-size: 1rem;
+}
+#aboutt:hover {
+	background-color: #809fff;
+	border-radius: 0.4vmax;
+	color: white;
+	transition: 0.2s ease;
+}
+#ourst:hover {
+	background-color: #77b300;
+	border-radius: 0.4vmax;
+	color: white;
+	transition: 0.2s ease;
+}
+#getqt:hover {
+	background-color: #ff6600;
+	border-radius: 0.4vmax;
+	color: white;
+	transition: 0.2s ease;
+}
+
+/* HOME STYLING */
+#home iframe {
+	opacity: 0.7;
+	transition: 0.2s ease;
+}
+#home p {
+	color: white;
+}
+#home iframe:hover {
+	opacity: 1;
+}
+#home h2 {
+	font-size: 3vmax;
+	text-align: center;
+	color: white;
+}
+
+#home {
+	text-shadow: 0.6rem;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	background: url(homebg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#home1 {
+	display: grid;
+	grid-template-rows: 0.3fr 0.3fr;
+}
+/* ABOUT US STYLING */
+
+#aboutus {
+	padding: 2vmax;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	text-align: center;
+	color: white;
+	background-color: #809fff;
+}
+
+#aboutus p {
+	padding: 4vmax;
+	font-size: 36px;
+}
+/* OUR SERVICES STYLING*/
+#ourservices {
+	background-color: #77b300;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#ourservices #services-flexbox {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	margin: auto;
+}
+#ourservices #services-flexbox div {
+	width: 32vw;
+	height: 50vh;
+}
+#ourservices #services-flexbox div h3 {
+	font-family: "Cabin", sans-serif;
+}
+/* GETAQUOTE STYLING */
+#getquote h2 {
+	background-color: rgb(255, 51, 0, 0.5);
+
+	color: white;
+	text-shadow: 1px;
+}
+#getquote h2::before {
+	opacity: 0.4;
+}
+#getquote {
+	display: grid;
+	grid-template-rows: 20% 80%;
+	text-align: center;
+	background: url(aboutbg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#getquote #formmark {
+	padding: 10px;
+	box-shadow: 0.1rem 0.1rem;
+	display: grid;
+	grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+	font-size: 36px;
+	width: 80%;
+	margin: auto;
+	background-color: rgb(255, 51, 0, 0.7);
+
+	border-radius: 2px;
+}
+#getquote #formmark div {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	color: white;
+}
+#getquote #formmark input,
+textarea {
+	outline: none;
+	height: 50px;
+	font-size: 2rem;
+	border-radius: 1vmax;
+	border: none;
+}
+#getquote #formmark textarea {
+	overflow-y: hidden;
+	font-size: 2rem;
+}
+#getquote #formmark button {
+	margin: auto;
+	height: 4rem;
+	width: 20rem;
+	grid-column: 1/span 2;
+	border-radius: 0.5vmax;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-size: 2rem;
+	font-family: "Cabin", sans-serif;
+	color: white;
+}
+#getquote #formmark button:hover {
+	background-color: black;
+	color: white;
+	transition: 0.2s ease;
+}
+/* FOOTER STYLING */
+#footer {
+	background-color: black;
+	text-align: center;
+}
+#footer h2 {
+	text-align: center;
+	color: white;
+}
+#footer div a {
+	text-decoration: none;
+	color: white;
+	font-size: 6rem;
+	padding: 2rem;
+}
+/* MEDIA QUERIES */
+
+@media all and (max-width: 500px) {
+	#header {
+		flex-direction: column;
+	}
+	#header nav ul li {
+		display: block;
+	}
+	#header nav ul li a {
+		width: 100%;
+		font-size: 1.5rem;
+	}
+	#home {
+		display: flex;
+		flex-direction: column;
+	}
+	#home div {
+		text-align: center;
+	}
+	#home1 {
+		justify-content: center;
+		align-items: center;
+	}
+	#home1 h2 {
+		font-size: 2rem;
+		width: 100%;
+	}
+	#home1 p {
+		font-size: 2rem;
+		text-align: center;
+		padding: 1rem;
+	}
+	#ourservices h2 {
+		padding: 1.5rem;
+	}
+}
